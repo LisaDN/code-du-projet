@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Dorville_Lisa_2_css_062022/style.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Booki</title>
 </head>
 <body>
+<!--header-->
+    <header>
+        <div id="logoBooki">
+        <img src="images/logo/Booki.png" alt="logo Booki">  
+        </div>
+        <nav>
+            <ul>
+                <li class="navhebergement"><a class="hoverNav" href="HébergementsAMarseille">Hébergements</a></li>
+                <li class="navActivites"><a class="hoverNav" href="ActivitésAMarseille">Activités</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--zone de recherche-->
+    <section class="sectionSearch">
+        <div class="titreSectionSearch">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p id="sousTitreAlign">En plein centre ville ou en pleine nature</p>
+        </div>
+        <form method="" action="" id="search"> 
+            <i class="fa-solid fa-location-dot" id="location"></i>
+            <input type="text" name="destination" id="destination" placeholder="Marseille, France">
+            <input type="submit" name="submit" id="submit" value="Rechercher">
+        </form>
+    </section>
+<!--filtres-->
+
+ <div class="filtres">
+       <h3>Filtres</h3>
+       <!--filtre economique-->
+       <a class="hoverFilter"> <div class="filtresIcone">
+         <div class="icone">
+            <i class="fa-solid fa-money-bill-wave"></i>
+         </div>
+          <div class="filtresText"> 
+            Économique
+          </div> 
+        </div></a>
+        <!--filtre famille-->
+        <a class="hoverFilter"><div class="filtresIcone" id="iconeFamilial">
+            <div class="icone">
+                <i class="fa-solid fa-child-reaching"></i>
+            </div>
+             <div class="filtresText" id="textFamilial"> 
+               Familial
+             </div> 
+           </div></a>
+        <!--filtre romantique-->
+        <a class="hoverFilter"> <div class="filtresIcone" id="iconeRomantique">
+            <div class="icone">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+             <div class="filtresText" id="textRomantique"> 
+               Romantique
+             </div> 
+           </div></a>
+        <!--filtre animaux-->
+        <a class="hoverFilter"><div class="filtresIcone" id="iconeAnimaux">
+            <div class="icone">
+                <i class="fa-solid fa-dog"></i>
+            </div>
+             <div class="filtresText" id="textAnimaux"> 
+               Animaux autorisés
+             </div> 
+           </div></a>
+ </div>
+<!-- zone informations-->
+    <div class="info">
+        <div class="bulleInfo">
+        <i class="fa-solid fa-circle-info"></i></div>
+        <div class="textInfo">Plus de 500 logements sont disponibles dans cette ville
+        </div>    
+    </div>
+<!-- section hébergements à Marseille-->
     
 </body>
 </html>
