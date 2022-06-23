@@ -169,7 +169,7 @@ border-bottom: 2px solid #F2F2F2;
 
 .hebergements{    /*encadré gris*/
     background-color: #F2F2F2;
-    height:800px;
+    height:750px;
     width:70%;
     border-radius: 30px;
     padding: 15px;
@@ -183,8 +183,11 @@ border-bottom: 2px solid #F2F2F2;
     background-color: white;
     border-radius: 20px; 
     width:300px;
+    margin:auto; /*auto centrage 3 blocs*/
   }
-
+  .titreHebergements{
+    margin-bottom: 0;
+      } 
 .cardImageHeb img{
     width: 290px;
     height: 150px;
@@ -223,7 +226,6 @@ border-bottom: 2px solid #F2F2F2;
 .fuStars{
 margin-right:0;
 padding-right:0;
-
 width: 1px;
 
 }
@@ -234,6 +236,16 @@ width: 1px;
 .starsColorGrey {
     color:#F2F2F2;
 }
+.alignContainerCard{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0;    
+    }
+ 
+
+   
+
 /*placement article et aside côte à côte*/
 
 
