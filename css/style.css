@@ -31,18 +31,17 @@ nav li{
     color:#0065FC;
 }
 /*zone de recherche*/
-#sousTitreAlign{
+#sousTitre1{
     margin-left: 0;
     margin-top: 0;
     }
-#search{
+.search{
     width:400px; 
     display:flex;
     align-items: center;
     height:50px;
     margin: 0;
- 
-    }
+     }
 input{
         border:none; 
     }
@@ -85,14 +84,14 @@ border-bottom: 2px solid #F2F2F2;
 .icone{
         border: 2px solid #DEEBFF; 
         background-color: #DEEBFF;
-        border-radius: 50px 50px 50px 50px;
+        border-radius: 50px;
         height:50px;
         width:50px;
         }
         
 .filtresIcone{
     border: 2px solid #DEEBFF;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
     height:50px;
@@ -111,7 +110,7 @@ border-bottom: 2px solid #F2F2F2;
    .icone{
     border: 2px solid #DEEBFF; 
     background-color: #DEEBFF;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 50px;
     height:50px;
     width:50px;
     display:flex;
@@ -143,35 +142,46 @@ border-bottom: 2px solid #F2F2F2;
 }
 /*zone informations*/
 .info{
-    display: flex;
-}
-.textInfo{
-    margin-left: 0;  /*retrait de l'espace blanc à gauche du texte*/
-}
-.bulleInfo{
-    margin:0;
-    width:60px; /*largeur infobulle*/
-}
-/*couleurs icone i*/
-.infoBulle{
+    display: flex;  
+    align-items: center;
+        }
 
+/*rond icone + couleurs  i*/
+.cercleInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid #F2F2F2;
+    border-radius: 20px;
+    height:30px;
+    width:30px;
+    margin-right:0;
+    padding-right: 0;
 }
+.infoBulle{
+    font-size: 15px;
+    color:#0065FC;
+}
+.textInfoBulle{
+   margin-left: 10px;
+   }
 /*Section Hébergements*/
-.cardHebergements{    /*encadré gris*/
+
+.hebergements{    /*encadré gris*/
     background-color: #F2F2F2;
     height:800px;
     width:70%;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px;
     padding: 15px;
     }
 
-.cardHebergements a{   /*card avec image + text cliquable*/
+.containerCard a{   /*card avec image + text cliquable*/
     display: block;
     text-decoration: none;
     color: black;
     height: 250px;
     background-color: white;
-    border-radius: 20px 20px 20px 20px; 
+    border-radius: 20px; 
     width:300px;
   }
 
@@ -207,15 +217,6 @@ border-bottom: 2px solid #F2F2F2;
     color: #0065FC;
 }
 /*placement article et aside côte à côte*/
-section{
-    display: flex;
-}
+
 
 /*Section aside "les plus populaires"*/
-.cardPopulaires{
-    background-color: #F2F2F2;
-    height:800px;
-    width:30%;
-    border-radius: 30px 30px 30px 30px;
-    padding: 15px;
-}

@@ -23,17 +23,17 @@
         </nav>
     </header>
 <!--zone de recherche-->
-    <section class="sectionSearch">
-        <div class="titreSectionSearch">
+    <div class="zoneSearch">
+        <div class="titreZoneSearch">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p id="sousTitreAlign">En plein centre ville ou en pleine nature</p>
+        <p id="sousTitre1">En plein centre ville ou en pleine nature</p>
         </div>
-        <form method="" action="" id="search"> 
+        <form method="" action="" class="search"> 
             <i class="fa-solid fa-location-dot" id="location"></i>
             <input type="text" name="destination" id="destination" placeholder="Marseille, France">
             <input type="submit" name="submit" id="submit" value="Rechercher">
         </form>
-    </section>
+      </div>
 <!--filtres-->
  <div class="filtres">
        <h3>Filtres</h3>
@@ -75,19 +75,17 @@
            </div></a>
  </div>
 <!-- zone informations-->
-    <div class="info">
-        <div class="bulleInfo">
-          <i class="fa-light fa-circle-info"></i>
-        </div>
-        <div class="textInfo">Plus de 500 logements sont disponibles dans cette ville
-        </div>    
-    </div>
+    
+  <div class="info">
+          <div class="cercleInfo"><i class="fa-solid fa-info infoBulle"></i></div>
+          <p class="textInfoBulle">Plus de 500 logements sont disponibles dans cette ville</p>
+  </div>
 <!-- section hébergements à Marseille-->
-<section>
+<section class="hebergements">
+  <h2 class="titreHebergements">Hébergements à Marseille</h2>
     <!--Hébergements-->
-  <article  id="HébergementsAMarseille" class="cardHebergements">
-    <h2>Hébergements à Marseille</h2>
-     <a href="#">
+    <div class="containerCard">
+       <a href="#">
        <div class="cardImageHeb">
         <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la cannebiere">
        </div>
@@ -98,14 +96,12 @@
         <i class="fa-solid fa-star fuStars" ></i>
         </div>
      </a>
-    
-  </article>
-
-    <!--Les plus populaires-->
+    </div>  
+ <!--Les plus populaires-->  
 <aside class="cardPopulaires">
-  <h2>Les plus polulaires</h2>
+ 
 </aside>
-</section>   
+</section> 
 <!--section activités à Marseille-->    
 
 <!--footer-->
