@@ -242,11 +242,58 @@ width: 1px;
     flex-wrap: wrap;
     margin:0;    
     }
- 
+       
 
-   
-
-/*placement article et aside côte à côte*/
 
 
 /*Section aside "les plus populaires"*/
+.cardPopulaires{    /*encadré gris*/
+    background-color: #F2F2F2;
+    height:750px;
+    border-radius: 30px;
+        }
+
+.containerCardPopu a{   /*card avec image + text cliquable*/
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 160px;
+    background-color: white;
+    border-radius: 20px; 
+    width:400px;
+    margin: auto; /*centrage bloc blanc dans encadré gris*/
+  
+  }
+
+  .cardImagePopu img{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;   
+    margin: 5px;
+}
+
+.cardBodyPopu{
+   height: 70px;
+   margin: 5px;
+
+   }
+.cardTitlePopu{
+    margin-top:20px;
+    margin-bottom:2px;
+    margin-left: 20px;
+    margin-right:20px;
+}   
+.cardTextPopu{
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+
+
+/*placement article et aside côte à côte*/
+.sectionHeb
+{
+display:flex;
+}
