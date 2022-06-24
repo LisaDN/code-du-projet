@@ -247,7 +247,6 @@ width: 1px;
     margin-top:0;
 }
 
-
 /*Section aside "les plus populaires"*/
 .cardPopulaires{    /*encadré gris*/
     background-color: #F2F2F2;
@@ -264,21 +263,22 @@ width: 1px;
     border-radius: 20px; 
     width:400px;
     margin: auto; /*centrage bloc blanc dans encadré gris*/
-  
-  }
+    }
 
   .cardImagePopu img{
     width: 150px;
     height: 150px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;   
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;  
     margin: 5px;
 }
+.cardImagePopu{
+    margin-left:0px;
+    }
 
 .cardBodyPopu{
    height: 70px;
    margin: 5px;
-
    }
 .cardTitlePopu{
     margin-top:20px;
@@ -293,6 +293,17 @@ width: 1px;
     margin-right:20px;
 }
 
+.containerCardPopu a{   /*card avec image + text cliquable*/
+    display: block;
+    text-decoration: none;
+    color: black;
+    height: 160px;
+    background-color: white;
+    border-radius: 20px; 
+    width:400px;
+    margin:auto; /*auto centrage 3 blocs*/
+  }
+  
 /*placement article et aside côte à côte*/
 .sectionHeb
 {
