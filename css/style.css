@@ -273,7 +273,8 @@ width: 1px;
     margin: 5px;
 }
 .cardImagePopu{
-    margin-left:0px;
+    margin-left:0;
+    margin-top: 0;
     }
 
 .cardBodyPopu{
