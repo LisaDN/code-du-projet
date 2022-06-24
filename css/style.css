@@ -305,9 +305,9 @@ width: 1px;
   }
   .containerCardPopu a{
  display:flex;
-  }
+   }
   .cardBodyPopu{
-flex:right;
+flex:1;
 padding-left: 5px;
   }
 /*placement article et aside côte à côte*/
