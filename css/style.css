@@ -179,8 +179,7 @@ padding-right: 35px;
     color: black;
     background-color: white;
     border-radius: 20px; 
-      
-  }
+    }
 
   .alignContainerCard{
     display:flex;
@@ -238,15 +237,23 @@ padding-right: 35px;
 
 /*Section aside "les plus populaires"*/
 
-.cardPopulaires h2{
-   margin-left: 20px;
-}
+   .titrePlusEtoile{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-left:20px;
+    margin-right:20px;
+      }
+
+    .cardPopulaires h2{
+        margin-bottom:0px;
+    }
 .cardPopu {
     display: flex;
     margin: 20px;
        }
 
-.cardDescription{
+.cardDescriptionPopulaires{
 margin-right:15px;
 margin-left:15px;
 }
@@ -266,12 +273,12 @@ margin-left:15px;
     border-radius: 20px 0 0 20px;
     }
     
-  .cardDescription h3{
+  .cardDescriptionPopulaires h3{
     margin:5px;
     margin-top:20px
   }
 
-  .cardDescription .stars{
+  .cardDescriptionPopulaires .stars{
     margin-top:45px;
       }
 /*placement article et aside côte à côte*/
