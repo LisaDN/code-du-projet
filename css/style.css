@@ -167,14 +167,12 @@ padding-right: 35px;
 /*Section Hébergements*/
 .sectionHeb .wrapper{
     display: flex;
-    align-items:center;
-    justify-content: space-between;
     flex-wrap: wrap;
       }
   
 .cardHebergements{    /*encadré gris*/
     background-color: #F2F2F2;
-    height: 600px;
+    height: 560px;
     border-radius: 30px;
     margin-right:5px;
     padding:25px;
@@ -186,31 +184,29 @@ padding-right: 35px;
     background-color: white;
     border-radius: 20px; 
     box-shadow:5px 5px 8px lightgray;
-    }
-
-  .alignContainerCard{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    margin:10px;
-              }  
-
-    .cardHeb{
-       padding:5px;
-       margin-bottom: 30px;   
-       width:30%;     /*la taille de chaque card est la même */ 
-        }
+       }
+  .cardHeb{
+    display: flex;
+    flex-direction: column;
+    height:180px;
+    padding:5px;
+    margin-bottom: 30px; 
+    background-color: white;
+    width: 30%;
+           }  
  
 .cardHeb img {
-    height:120px;   
-    width:100%;
+    height:55%;   
     border-radius: 20px 20px 0px 0px;
     object-fit: cover; 
-}
-.cardHeb h3,p,.stars{
+            }
+.cardHebDescription h3, p,.stars{
     margin:5px;
-}
+    }
+.cardHebDescription {
+        margin-left:5px;
+               }    
+
 .stars{
     display:flex;
     color:#F2F2F2;
@@ -238,10 +234,16 @@ padding-right: 35px;
        
  .cardHebergements h4{
     margin-left:20px;
-    margin-top:0;
+    margin-top:20px;
     
 }
+.alignContainerCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    }
 
+ 
 /*Section aside "les plus populaires"*/
 
    .titrePlusEtoile{
@@ -255,10 +257,7 @@ padding-right: 35px;
     .cardPopulaires h2{
         margin-bottom:0px;
     }
-.cardPopu {
-    display: flex;
-    margin: 20px;
-       }
+
 
 .cardDescriptionPopulaires{
 margin-right:15px;
@@ -266,16 +265,19 @@ margin-left:15px;
 }
 .cardPopulaires{    /*encadré gris*/
     background-color: #F2F2F2;
-    height:600px;
+    height:560px;
     border-radius: 30px;
     margin-left:40px;
     padding: 25px;
     }
-
+    .cardPopu {
+        display: flex;
+        margin: 30px;
+        height:130px;
+           }
 .cardPopu img{
-    height:150px;
     margin:5px;
-    width:35%;
+    width:30%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     }
@@ -286,7 +288,7 @@ margin-left:15px;
   }
 
   .cardDescriptionPopulaires .stars{
-    margin-top:45px;
+    margin-top:20px;
       }
 /*placement article et aside côte à côte*/
 .sectionHeb
@@ -367,3 +369,7 @@ footer .wrapper{
     margin-bottom: 15px;
     margin-left: 0;
 }  
+
+.footerTextDroite{
+    margin-right:350px;
+}
