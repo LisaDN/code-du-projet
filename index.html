@@ -11,15 +11,13 @@
 <body>
 <!--header-->
     <header class="wrapper">
-        <div>
-        <img src="images/logo/Booki.png" alt="logo Booki">  
-        </div>
-        <nav>
-            <ul>
-                <li class="navhebergement"><a class="hoverNav" href="#HébergementsAMarseille">Hébergements</a></li>
-                <li class="navActivites"><a class="hoverNav" href="#ActivitésAMarseille">Activités</a></li>
-            </ul>
-        </nav>
+        <div class="navigation">   
+          <img src="images/logo/Booki.png" alt="logo Booki">  
+           <nav class="navigation">
+                <a class="traitLienActif" href="#HébergementsAMarseille">Hébergements</a>
+                <a  href="#ActivitésAMarseille">Activités</a>
+           </nav>
+          </div>   
     </header>
 <!--zone de recherche-->
     <div class="zoneSearch" >
@@ -53,7 +51,7 @@
         <a class="hoverFilter">
           <div class="filtresIcone" id="iconeFamilial">
             <div class="icone">
-                <i class="fa-solid fa-child-reaching faFiltres"></i>
+              <i class="fa-solid fa-child-reaching faFiltres"></i>
             </div>
              <div class="filtresText" id="textFamilial"> 
                Familial
@@ -69,7 +67,8 @@
              </div> 
            </div></a>
         <!--filtre animaux-->
-        <a class="hoverFilter"><div class="filtresIcone" id="iconeAnimaux">
+        <a class="hoverFilter">
+          <div class="filtresIcone" id="iconeAnimaux">
             <div class="icone">
                 <i class="fa-solid fa-dog faFiltres"></i>
             </div>
@@ -77,7 +76,7 @@
                Animaux autorisés
              </div> 
            </div></a>
-          </div>
+          </div>  <!--fin wrapper-->
         </div>
      <!-- zone informations-->
  

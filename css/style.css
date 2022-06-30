@@ -12,29 +12,28 @@
     margin:0 auto;
     padding:0 auto;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-nav ul{
-list-style-type: none;
+.navigation{
 display:flex;
+align-items: center;
+justify-content: space-between;
 }
-nav li{
+nav a{
     margin-left: 80px;
-    font-size: 20px;
-}
-
-.hoverNav{
+    font-size: 25px;  
     text-decoration: none;
     color:black;
-}
+          }
 
-.hoverNav:hover{   
-    border-top: 3px solid #0065FC;
-    padding-top:40px;
-    color:#0065FC;
+.traitLienActif{   
+   color:#0065FC;
+   border-top: 2px solid #0065FC ;
+   padding-top: 50px; /*espacement trait bleu*/
+   padding-bottom: 50px;  /*pour que le texte ne descend pas lors de l'espacement trait bleu*/
+    }
+
+header img{
+    height:60px;  /*diminution taille logo booki*/
+    
 }
 
 /*zone de recherche*/
@@ -118,7 +117,7 @@ padding-right: 35px;
     justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
-  }
+      }
 
 /*effet survol elements filtres*/
 .hoverFilter:hover{
@@ -165,6 +164,7 @@ padding-right: 35px;
 /*Section Hébergements*/
 .sectionHeb .wrapper{
     display: flex;
+    align-items:center;
     justify-content: space-between;
     flex-wrap: wrap;
       }
