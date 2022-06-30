@@ -49,6 +49,9 @@ header img{
 input{
         border:none; 
     }
+input:focus{
+        outline: none; /*enlève l'encadrer noir autour du input search*/
+     } 
 .search i{
     background-color: #F2F2F2;
     height: 50px;
