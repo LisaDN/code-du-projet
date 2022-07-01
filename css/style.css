@@ -116,7 +116,7 @@ padding-right: 35px;
     flex-wrap: wrap; 
 }
 
-.filtres a:hover{
+.filtres  a:hover{
     color:#DEEBFF
 }
 
@@ -220,7 +220,7 @@ padding-right: 35px;
        
  .cardHebergements h4{
     margin-left:20px;
-    margin-top:20px;
+    margin-top:15px;
     
 }
 .alignContainerCard{
