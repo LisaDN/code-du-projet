@@ -10,7 +10,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-
 }
 
 /*header*/
@@ -44,21 +43,19 @@ nav a {
 }
 
 header img {
-    height: 60px;
+    height: 50px;
     /*diminution taille logo booki*/
 
 }
 
 /*zone de recherche*/
-.zoneSearch h1 {
-    margin-bottom: 0;
-}
+
 
 .search {
     display: flex;
     align-items: center;
     height: 50px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 input {
@@ -103,7 +100,9 @@ input:focus {
     padding-right: 35px;
 }
 
-
+.zoneSearch h1 {
+    font-size: 20px;
+}
 
 /*filtres*/
 .filtres .wrapper {
@@ -147,7 +146,11 @@ input:focus {
 }
 
 .filtres {
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.filtres h2 {
+    font-size: 18px;
 }
 
 /*zone informations*/
@@ -168,8 +171,8 @@ input:focus {
     justify-content: center;
     border: 2px solid #F2F2F2;
     border-radius: 20px;
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     margin-right: 0;
     padding-right: 0;
 }
@@ -254,7 +257,10 @@ p,
     color: #0065FC;
 }
 
-
+.cardHebergements h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
 
 .cardHebergements h4 {
     margin-top: 40px;
@@ -279,6 +285,7 @@ p,
 
 .cardPopulaires h2 {
     margin-bottom: 0px;
+    font-size: 20px;
 }
 
 
@@ -338,21 +345,21 @@ p,
 /*Section activites à Marseille*/
 
 .cardActivitesGrande img {
-    height: 362px;
+    height: 380px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
 }
 
-.cardActivitesPetiteHaut img {
+.cardActivitesPetite1 img {
     height: 150px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
 }
 
-.cardActivitesPetiteBas img {
-    height: 100px;
+.cardActivitesPetite2 img {
+    height: 120px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
@@ -392,6 +399,10 @@ p,
 
 .activites h3 {
     margin-left: 15px;
+}
+
+.activites h2 {
+    font-size: 20px;
 }
 
 /*Footer*/
