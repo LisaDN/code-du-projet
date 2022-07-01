@@ -88,11 +88,11 @@ padding-right: 35px;
 .filtres .wrapper{
     display: flex;
     align-items: center;
-    flex-wrap: wrap; 
-}
+ }
 .filtres ul{
     display: flex;
     list-style-type: none;    
+    flex-wrap: wrap;
    }
 
 .filtres li{
