@@ -214,6 +214,7 @@ input:focus {
     padding: 5px;
     background-color: white;
     width: calc(100%/3 - 14px);
+    /*chaque card occupe le même nombre d'espace en complément d'un gap dans class alignContainerCard*/
     box-sizing: border-box;
 }
 
@@ -301,8 +302,10 @@ p,
 
 .cardPopu {
     display: flex;
-    margin: 25px;
-    height: 150px;
+    height: calc(100%/3 - 50px);
+    /*chaque card occupe le même nombre d'espace*/
+    box-sizing: border-box;
+    margin: 30px;
 }
 
 .cardPopu img {
