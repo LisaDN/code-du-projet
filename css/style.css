@@ -192,10 +192,11 @@ input:focus {
 .cardHebergements {
     /*encadré gris*/
     background-color: #F2F2F2;
-    height: 580px;
+    height: 560px;
     border-radius: 30px;
-    margin-right: 5px;
-    padding: 25px;
+    padding: 20px;
+    padding-left: 40px;
+    /*réduction décalage vers la droite*/
 }
 
 .card {
@@ -213,7 +214,7 @@ input:focus {
     height: 190px;
     padding: 5px;
     background-color: white;
-    width: calc(100%/3 - 14px);
+    width: calc(100%/3 - 20px);
     /*chaque card occupe le même nombre d'espace en complément d'un gap dans class alignContainerCard*/
     box-sizing: border-box;
 }
@@ -255,19 +256,14 @@ p,
 
 
 
-.cardHebergements h2 {
-    margin-left: 20px;
-}
-
 .cardHebergements h4 {
-    margin-left: 20px;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .alignContainerCard {
     display: flex;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 20px;
 }
 
 
@@ -294,10 +290,10 @@ p,
 .cardPopulaires {
     /*encadré gris*/
     background-color: #F2F2F2;
-    height: 580px;
+    height: 560px;
     border-radius: 30px;
-    margin-left: 40px;
-    padding: 25px;
+    margin-left: 30px;
+    padding: 20px;
 }
 
 .cardPopu {
@@ -322,7 +318,7 @@ p,
 }
 
 .cardDescriptionPopulaires .stars {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /*placement article et aside côte à côte*/
