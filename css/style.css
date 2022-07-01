@@ -95,7 +95,7 @@ padding-right: 35px;
 
 .filtresIcone{
     border: 2px solid #DEEBFF;
-    border-radius: 50px;
+    border-radius: 100px;
     display: flex;
     align-items: center;
     height:50px;
@@ -111,15 +111,9 @@ padding-right: 35px;
    }
 
    .icone{
-    border: 2px solid #DEEBFF; 
     background-color: #DEEBFF;
-    border-radius: 50px;
-    height:50px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
+    border-radius: 50px;  
+    padding:15px;
       }
 
 /*effet survol elements filtres*/
@@ -374,3 +368,5 @@ footer .wrapper{
     margin-left: 5px;
     margin-right:285px;
 }
+
+
