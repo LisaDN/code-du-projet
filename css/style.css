@@ -85,52 +85,44 @@ padding-right: 35px;
 
 
 /*filtres*/
-.filtres .wrapper{
-    display:flex;
-    align-items: center; 
-    flex-wrap:wrap;
-    margin-top: 25px;
-    margin-bottom: 25px;
-       }
-
-.filtresIcone{
-    border: 2px solid #DEEBFF;
-    border-radius: 100px;
+.filtres ul{
     display: flex;
-    align-items: center;
-    height:50px;
-    margin-left:30px;
-           }  
-.filtresText{
-   margin-left: 10px;
-   margin-right:15px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-   
+    list-style-type: none;    
    }
 
-   .icone{
-    background-color: #DEEBFF;
-    border-radius: 50px;  
-    padding:15px;
-      }
+.filtres li{
+    margin-right: 25px;
+    border:2px solid #DEEBFF;
+    border-radius:100px;
+    font-weight: bold;   
+    padding-right: 25px;
+}
 
-/*effet survol elements filtres*/
-.hoverFilter:hover{
-    color:#DEEBFF;
-           }
-.hoverFilter{
+.filtres i{
+    border:2px solid #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 100px;
+    padding: 15px;
+    margin-right: 15px;  
+     }
+.filtres i{
+    color:#0065FC
+}
+
+
+.filtres .wrapper{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.filtres a:hover{
+    color:#DEEBFF
+}
+
+.filtres a{
     text-decoration: none;
-    color:black;
-    margin:0;
-    padding:0;
-    height:50px;
-    cursor:pointer;
-}           
-/*couleurs icone filtres*/
-.faFiltres{
-    color: #0065FC;
+    color: black;
 }
 /*zone informations*/
 .info .wrapper{
@@ -271,7 +263,7 @@ margin-left:15px;
            }
 .cardPopu img{
     margin:5px;
-    width:30 %;
+    width:30%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
     }
