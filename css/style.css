@@ -458,12 +458,10 @@ footer li {
 }
 
 /*Intégration tablettes*/
-@media only screen and(min-width:768px) and (max-width:991px) {
+@media (min-width:768px) and (max-width:991px) {
+
     .wrapper {
-        width: 100%;
-        max-width: 990px;
-        margin: 0 auto;
-        padding: 0 auto;
+        width: 90%;
     }
 
     .zoneSearch h1,
@@ -488,22 +486,25 @@ footer li {
     }
 
     .cardHebergements {
+        order: 2;
+    }
 
-        font-size: 10px;
+    .sectionHeb .wrapper {
+        flex-direction: column;
+    }
+
+    .cardPopulaires {
+        padding-bottom: 0;
+        margin-bottom: 15px;
     }
 
 
-    .sectionHeb h2 {
-        font-size: 13px;
+
+    .cardPopulaires {
+        margin-left: 0;
     }
 
-    .cardHeb {}
 
-    .cardPopu img {}
-
-    .activites .wrapper {
-        box-sizing: border-box;
-    }
 
     .activites h2 {
         font-size: 13px;
@@ -535,11 +536,10 @@ footer li {
 }
 
 /*Intégration mobiles*/
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
 
     .wrapper {
-        max-width: 767px;
-        margin: auto;
+        width: 95%;
     }
 
 
@@ -604,9 +604,6 @@ footer li {
 
     }
 
-    .zoneSearch .wrapper {
-        max-width: 85%;
-    }
 
     .zoneSearch h1 {
         font-size: 17px;
@@ -622,7 +619,6 @@ footer li {
     .filtres .wrapper {
         flex-direction: column;
         align-items: flex-start;
-        max-width: 85%;
     }
 
     .filtres ul {
@@ -632,11 +628,6 @@ footer li {
 
     .filtres li {
         margin-bottom: 10px;
-    }
-
-    .info .wrapper {
-        max-width: 85%;
-
     }
 
     .cardHebergements {
@@ -660,24 +651,25 @@ footer li {
         width: 100%;
     }
 
-    .cardHebergements {
-        padding-left: 0;
-        padding-right: 0;
-        margin-right: 7%;
-        margin-left: 7%;
+    .sectionHeb .wrapper {
+        flex-direction: column;
+        margin: 0;
     }
+
+
 
     .cardHebergements h4 {
         margin-top: 20px;
     }
 
-    .activites .wrapper {
-        margin-top: 950px;
-        width: 85%;
+
+    .activites {
+        margin-top: 150px;
     }
 
     .containerCardActivites {
         flex-direction: column;
+
     }
 
     .cardActivitesGrande img {
