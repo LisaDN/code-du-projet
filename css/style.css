@@ -46,7 +46,6 @@ body {
 header img {
     height: 50px;
     /*diminution taille logo booki*/
-
 }
 
 /*zone de recherche*/
@@ -68,22 +67,23 @@ input:focus {
     /*enlève l'encadrer noir autour du input search*/
 }
 
-.search i {
+.search .location {
     background-color: #F2F2F2;
-    height: 50px;
-    border-radius: 15px 0 0 15px;
+    height: 40px;
+    border-radius: 14px 0 0 14px;
     display: flex;
     /*centrage icone*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    color: black;
 }
 
 .submit {
     background-color: #0065FC;
-    height: 50px;
+    height: 40px;
     border-radius: 0 15px 15px 0;
     color: white;
     font-weight: bold;
@@ -94,7 +94,7 @@ input:focus {
 
 .destination {
     font-weight: bold;
-    height: 50px;
+    height: 40px;
     border-top: 2px solid #F2F2F2;
     border-bottom: 2px solid #F2F2F2;
     padding-left: 10px;
@@ -115,6 +115,7 @@ input:focus {
     display: flex;
     list-style-type: none;
     flex-wrap: wrap;
+
 }
 
 .filtres li {
@@ -123,18 +124,22 @@ input:focus {
     border-radius: 50px;
     font-weight: bold;
     padding-right: 10px;
+    height: 35px;
 }
 
 .filtres i {
     border: 2px solid #DEEBFF;
     background-color: #DEEBFF;
+    color: #0065FC;
     border-radius: 50px;
-    padding: 15px;
+    padding: 8px;
     margin-right: 10px;
+
+
 }
 
-.filtres i {
-    color: #0065FC
+.searchButtonMobile {
+    display: none;
 }
 
 .filtres a:hover {
@@ -291,8 +296,8 @@ p,
 
 
 .cardDescriptionPopulaires {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .cardPopulaires {
@@ -302,19 +307,23 @@ p,
     border-radius: 30px;
     margin-left: 30px;
     padding: 20px;
+
 }
 
 .cardPopu {
     display: flex;
-    height: calc(100%/3 - 50px);
-    /*chaque card occupe le même nombre d'espace*/
-    box-sizing: border-box;
-    margin: 30px;
+    margin-top: 40px;
+}
+
+.containerCardPopu {
+    height: 100%;
+
 }
 
 .cardPopu img {
     margin: 5px;
     width: 30%;
+    height: 145px;
     /*image occupe 30% de l'encadrer blanc*/
     object-fit: cover;
     border-radius: 20px 0 0 20px;
@@ -322,12 +331,13 @@ p,
 
 .cardDescriptionPopulaires h3 {
     margin: 5px;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 .cardDescriptionPopulaires .stars {
     margin-top: 20px;
 }
+
 
 /*placement article et aside côte à côte*/
 .sectionHeb {
@@ -437,10 +447,10 @@ footer li {
 }
 
 /*Intégration tablettes*/
-@media all and (min-width:768px)and (max-width:991px) {
+@media sreen and (max-width:991px) {
     .wrapper {
         width: 100%;
-        max-width: 890px;
+        max-width: 990px;
         margin: 0 auto;
         padding: 0 auto;
     }
@@ -535,31 +545,93 @@ footer li {
 }
 
 /*Intégration mobiles*/
-@media all and (max-width: 767px) {
-    .wrapper {
-        width: 100%;
+@media screen and (max-width: 767px) {
 
+    .wrapper {
+        max-width: 767px;
+        margin: auto;
     }
 
     .navigationContainer {
         flex-direction: column;
-
-        width: 100%;
+        align-items: flex-start;
         margin-left: 0;
         margin-right: 0;
+        margin-top: 15px;
+    }
+
+    header img {
+        height: 40px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .navigation a {
+        margin-left: 0;
     }
 
     .traitLienActif {
         border-top: none;
         border-bottom: 2px solid #0065FC;
-        padding-bottom: 8px;
+        padding-bottom: 10px;
 
+    }
+
+    .traitLienNonActif {
+        border-bottom: 2px solid #F2F2F2;
+        padding-bottom: 10px;
+    }
+
+    .navigation a {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navigationContainer a {
+        font-size: 13px;
+    }
+
+    .submit {
+        display: none;
+    }
+
+    .searchButtonMobile {
+        display: block;
+        border-radius: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        color: white;
+        border: none;
+        height: 40px;
+        background-color: #0065FC;
+
+    }
+
+    .searchButtonMobile i {
+        background-color: #0065FC;
+        border-radius: 15px;
+
+    }
+
+    .zoneSearch .wrapper {
+        max-width: 85%;
+    }
+
+    .zoneSearch h1 {
+        font-size: 17px;
+        /*margin-right: 45px;*/
+    }
+
+    .zoneSearch p {
+        font-size: 13px;
+        margin-left: 0;
     }
 
 
     .filtres .wrapper {
         flex-direction: column;
         align-items: flex-start;
+        max-width: 85%;
     }
 
     .filtres ul {
@@ -569,6 +641,11 @@ footer li {
 
     .filtres li {
         margin-bottom: 10px;
+    }
+
+    .info .wrapper {
+        max-width: 85%;
+
     }
 
     .cardHebergements {

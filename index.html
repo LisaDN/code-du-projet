@@ -22,7 +22,7 @@
         <img src="images/logo/Booki.png" alt="logo Booki">
         <nav class="navigation">
           <a class="traitLienActif" href="#HébergementsAMarseille">Hébergements</a>
-          <a href="#ActivitésAMarseille">Activités</a>
+          <a class="traitLienNonActif" href="#ActivitésAMarseille">Activités</a>
         </nav>
       </div>
     </div>
@@ -34,9 +34,12 @@
       <p>En plein centre ville ou en pleine nature</p>
 
       <form method="#" action="#" class="search">
-        <i class="fa-solid fa-location-dot"></i>
+        <i class="fa-solid fa-location-dot location"></i>
         <input type="search" name="destination" class="destination" placeholder="Marseille, France">
         <input type="submit" name="submit" class="submit" value="Rechercher">
+        <button action="#" class="searchButtonMobile">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </form>
     </div>
   </div>
@@ -217,6 +220,7 @@
             </div>
           </a>
           <!--card populaires 3-->
+
           <a href="#" class="card cardPopu">
             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Hotel Tout bleu et Blanc">
