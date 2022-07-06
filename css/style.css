@@ -290,7 +290,7 @@ p,
 }
 
 .cardPopulaires h2 {
-    margin-bottom: 0px;
+    margin-bottom: 30px;
     font-size: 20px;
 }
 
@@ -303,28 +303,39 @@ p,
 .cardPopulaires {
     /*encadré gris*/
     background-color: #F2F2F2;
-    height: 650px;
+    height: 100%;
     border-radius: 30px;
     margin-left: 30px;
     padding: 20px;
+    box-sizing: border-box;
 
 }
 
 .cardPopu {
     display: flex;
-    margin-top: 40px;
+    height: 100%;
+    background-color: white;
+    padding: 0px;
+    border-radius: 15px;
+    margin-bottom: 25px;
 }
 
 .containerCardPopu {
-    height: 100%;
+    box-sizing: border-box;
+    height: calc(100%/3 - 60px);
 
+}
+
+.containerCardPopu a {
+    text-decoration: none;
+    color: black;
 }
 
 .cardPopu img {
     margin: 5px;
     width: 30%;
-    height: 145px;
     /*image occupe 30% de l'encadrer blanc*/
+    max-height: 100%;
     object-fit: cover;
     border-radius: 20px 0 0 20px;
 }
@@ -335,7 +346,7 @@ p,
 }
 
 .cardDescriptionPopulaires .stars {
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 
@@ -447,7 +458,7 @@ footer li {
 }
 
 /*Intégration tablettes*/
-@media sreen and (max-width:991px) {
+@media only screen and(min-width:768px) and (max-width:991px) {
     .wrapper {
         width: 100%;
         max-width: 990px;
@@ -476,40 +487,19 @@ footer li {
         margin: 5px;
     }
 
-    .sectionHeb .wrapper {
-        flex-direction: column;
-    }
-
     .cardHebergements {
-        order: 2;
+
         font-size: 10px;
     }
 
-    .cardPopulaires {
-        margin-bottom: 30px;
-        margin-left: 0;
-    }
-
-    .containerCardPopu {
-        display: flex;
-    }
-
-    .cardPopu {
-        width: calc(100%/3);
-        height: auto;
-        box-sizing: border-box;
-        font-size: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
 
     .sectionHeb h2 {
         font-size: 13px;
     }
 
-    .cardHeb {
-        height: 150px;
-    }
+    .cardHeb {}
+
+    .cardPopu img {}
 
     .activites .wrapper {
         box-sizing: border-box;
@@ -545,12 +535,13 @@ footer li {
 }
 
 /*Intégration mobiles*/
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     .wrapper {
         max-width: 767px;
         margin: auto;
     }
+
 
     .navigationContainer {
         flex-direction: column;
@@ -653,7 +644,7 @@ footer li {
     }
 
     .cardPopulaires {
-        height: 560px;
+        border-radius: 0;
         margin-left: 0;
     }
 
@@ -669,9 +660,20 @@ footer li {
         width: 100%;
     }
 
+    .cardHebergements {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: 7%;
+        margin-left: 7%;
+    }
+
+    .cardHebergements h4 {
+        margin-top: 20px;
+    }
+
     .activites .wrapper {
         margin-top: 950px;
-
+        width: 85%;
     }
 
     .containerCardActivites {
