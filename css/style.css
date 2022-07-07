@@ -17,7 +17,7 @@ body {
     width: 100%;
     max-width: 1380px;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0;
 }
 
 .navigationContainer {
@@ -489,6 +489,7 @@ footer li {
 
     .sectionHeb .wrapper {
         width: 90%;
+
     }
 
     .activites .wrapper {
@@ -544,18 +545,6 @@ footer li {
 
     .activites h3 {
         font-size: 10px;
-    }
-
-    .cardActivitesGrande img {
-        height: ;
-    }
-
-    .cardActivitesPetite1 img {
-        height: ;
-    }
-
-    .cardActivitesPetite2 img {
-        height: ;
     }
 
 
@@ -691,6 +680,7 @@ footer li {
     .cardPopulaires {
         border-radius: 0;
         margin-left: 0;
+
     }
 
     .cardHebergements {
