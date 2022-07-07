@@ -590,7 +590,7 @@ footer li {
 
     .navigationContainer {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: stretch;
         margin-left: 0;
         margin-right: 0;
         margin-top: 15px;
@@ -599,7 +599,12 @@ footer li {
     header img {
         height: 40px;
         margin: 0 auto;
-        margin-bottom: 20px;
+    }
+
+
+    .navigation {
+        display: flex;
+
     }
 
     .navigation a {
@@ -610,18 +615,20 @@ footer li {
         border-top: none;
         border-bottom: 2px solid #0065FC;
         padding-bottom: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
 
     }
 
     .traitLienNonActif {
         border-bottom: 2px solid #F2F2F2;
         padding-bottom: 10px;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 50px;
     }
 
-    .navigation a {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
+
 
     .navigationContainer a {
         font-size: 13px;
