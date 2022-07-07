@@ -685,11 +685,12 @@ footer li {
     .cardHebergements {
         background-color: white;
         padding: 0;
+        width: 90%;
+        margin-left: 5%;
     }
 
     .alignContainerCard {
         flex-direction: column;
-
     }
 
     .cardHeb {
@@ -751,6 +752,11 @@ footer li {
 
     footer .wrapper {
         flex-direction: column;
+
+    }
+
+    .activites .wrapper {
+        margin-top: 190px;
     }
 
 }
