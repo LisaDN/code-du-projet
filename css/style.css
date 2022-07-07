@@ -457,10 +457,41 @@ footer li {
     margin: 15px;
 }
 
+@media (min-width:992px) {
+    .navigation {
+        margin-right: 10%;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .sectionHeb {
+        font-size: 12px;
+    }
+}
+
 /*Intégration tablettes*/
 @media (min-width:768px) and (max-width:991px) {
 
-    .wrapper {
+
+    .zoneSearch .wrapper {
+        width: 90%;
+    }
+
+    .filtres .wrapper {
+        width: 90%;
+    }
+
+    .info .wrapper {
+        width: 90%;
+    }
+
+    .sectionHeb .wrapper {
+        width: 90%;
+    }
+
+    .activites .wrapper {
         width: 90%;
     }
 
@@ -469,8 +500,9 @@ footer li {
         font-size: 13px;
     }
 
+
     .navigation {
-        margin-right: 30px;
+        margin-right: 10%;
     }
 
     .filtres {
@@ -515,33 +547,46 @@ footer li {
     }
 
     .cardActivitesGrande img {
-        height: 190px;
+        height: ;
     }
 
     .cardActivitesPetite1 img {
-        height: 75px;
+        height: ;
     }
 
     .cardActivitesPetite2 img {
-        height: 60px;
+        height: ;
     }
+
 
     footer .wrapper {
         font-size: 10px;
     }
 
     footer ul {
-        margin-right: 95px;
+        margin-right: 15%;
     }
 }
 
 /*Intégration mobiles*/
 @media (max-width: 767px) {
 
-    .wrapper {
-        width: 95%;
+
+    .zoneSearch .wrapper {
+        width: 90%;
     }
 
+    .filtres .wrapper {
+        width: 90%;
+    }
+
+    .info .wrapper {
+        width: 90%;
+    }
+
+    .activites .wrapper {
+        width: 90%;
+    }
 
     .navigationContainer {
         flex-direction: column;
@@ -584,6 +629,7 @@ footer li {
 
     .submit {
         display: none;
+
     }
 
     .searchButtonMobile {
@@ -595,7 +641,6 @@ footer li {
         border: none;
         height: 40px;
         background-color: #0065FC;
-
     }
 
     .searchButtonMobile i {
@@ -604,10 +649,8 @@ footer li {
 
     }
 
-
     .zoneSearch h1 {
         font-size: 17px;
-        /*margin-right: 45px;*/
     }
 
     .zoneSearch p {
@@ -641,10 +684,12 @@ footer li {
 
     .cardHebergements {
         background-color: white;
+        padding: 0;
     }
 
     .alignContainerCard {
         flex-direction: column;
+
     }
 
     .cardHeb {
