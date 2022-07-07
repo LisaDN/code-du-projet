@@ -31,16 +31,15 @@ body {
     margin-left: 80px;
     font-size: 15px;
     text-decoration: none;
-    color: black;
+
 }
 
 .traitLienActif {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 50px;
+    padding-top: 45px;
     /*espacement trait bleu*/
-    padding-bottom: 50px;
-    /*pour que le texte ne descend pas lors de l'espacement trait bleu*/
+
 }
 
 header img {
