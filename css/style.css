@@ -560,18 +560,18 @@ footer li {
 /*Intégration mobiles*/
 @media (max-width: 767px) {
 
+
     .zoneSearch .wrapper {
-        margin: 25px;
         width: 90%;
     }
 
     .filtres .wrapper {
-        margin: 25px;
+
         width: 90%;
     }
 
     .info .wrapper {
-        margin: 25px;
+
         width: 90%;
 
     }
