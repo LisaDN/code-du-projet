@@ -325,6 +325,7 @@ p,
 .containerCardPopu {
     box-sizing: border-box;
     height: calc(100%/3 - 60px);
+    /*-60px pour que toutes les cards rentrent dans le container gris et fassent la même taille*/
 
 }
 
