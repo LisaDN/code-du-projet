@@ -39,7 +39,10 @@ body {
     border-top: 2px solid #0065FC;
     padding-top: 14%;
     /*espacement trait bleu*/
+}
 
+.traitLienNonActif {
+    color: black;
 }
 
 header img {
@@ -241,6 +244,7 @@ p,
 
 .cardHebDescription {
     margin-left: 5px;
+    margin-top: 10px;
 }
 
 .stars {
@@ -434,12 +438,12 @@ footer {
 
 footer .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
 }
 
 footer ul {
     list-style-type: none;
-    margin-right: 250px;
+    margin-right: 15%;
     padding-left: 0;
 }
 
@@ -457,22 +461,23 @@ footer li {
     margin: 15px;
 }
 
-@media (min-width:992px) {
+@media screen and (min-width:992px) {
     .navigation {
         margin-right: 10%;
     }
 
     .wrapper {
         width: 90%;
+        /*pour que le contenu ne colle pas à la bordure*/
+        font-size: 80%;
+        /*réduction taille police*/
     }
 
-    .sectionHeb {
-        font-size: 12px;
-    }
+
 }
 
 /*Intégration tablettes*/
-@media (min-width:768px) and (max-width:991px) {
+@media only screen and (min-width:768px) and (max-width:991px) {
 
 
     .zoneSearch .wrapper {
@@ -558,7 +563,7 @@ footer li {
 }
 
 /*Intégration mobiles*/
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
 
     .zoneSearch .wrapper {
