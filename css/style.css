@@ -106,6 +106,10 @@ input:focus {
     font-size: 20px;
 }
 
+.searchButtonMobile {
+    display: none;
+}
+
 /*filtres*/
 .filtres .wrapper {
     display: flex;
@@ -139,9 +143,7 @@ input:focus {
 
 }
 
-.searchButtonMobile {
-    display: none;
-}
+
 
 .filtres a:hover {
     color: #DEEBFF
