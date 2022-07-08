@@ -348,7 +348,7 @@ p,
 }
 
 .cardDescriptionPopulaires .stars {
-    margin-top: 10%;
+    margin-top: 60px;
 }
 
 
@@ -360,7 +360,7 @@ p,
 
 .cardHebergements {
     flex: 2;
-    /*propriétés flex 3 pour que card hebergements prend plus de place que aside*/
+    /*propriétés pour que card hebergements prend plus de place que aside*/
 }
 
 .cardPopulaires {
@@ -524,6 +524,7 @@ footer li {
 
     .cardHebergements {
         order: 2;
+        height: 50%;
     }
 
     .sectionHeb .wrapper {
@@ -532,7 +533,8 @@ footer li {
 
     .cardPopulaires {
         padding-bottom: 0;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
+        height: 50%;
     }
 
 
@@ -541,7 +543,10 @@ footer li {
         margin-left: 0;
     }
 
-
+    .cardHeb {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 
     .activites h2 {
         font-size: 13px;
