@@ -464,10 +464,6 @@ footer li {
 }
 
 @media screen and (min-width:992px) {
-    .navigation {
-        margin-right: 10%;
-    }
-
     .wrapper {
         width: 90%;
         /*pour que le contenu ne colle pas à la bordure*/
