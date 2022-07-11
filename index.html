@@ -18,22 +18,22 @@
   <!--header-->
   <header>
     <div class="wrapper">
-      <div class="navigationContainer">
+      <div class="navigation">
         <img src="images/logo/Booki.png" alt="logo Booki">
-        <nav class="navigation">
-          <a class="traitLienActif" href="#HébergementsAMarseille">Hébergements</a>
-          <a class="traitLienNonActif" href="#ActivitésAMarseille">Activités</a>
+        <nav>
+          <a href="#Hébergements">Hébergements</a>
+          <a href="#Activités">Activités</a>
         </nav>
       </div>
     </div>
   </header>
   <!--zone de recherche-->
-  <div class="zoneSearch">
+  <div class="search">
     <div class="wrapper">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
 
-      <form method="post" action="#" class="search">
+      <form method="post" action="#" class="searchBox">
         <i class="fa-solid fa-location-dot location"></i>
         <input type="search" name="destination" class="destination" placeholder="Marseille, France">
         <input type="submit" name="submit" class="submit" value="Rechercher">
@@ -44,7 +44,7 @@
     </div>
   </div>
   <!--filtres-->
-  <div class="filtres">
+  <div class="filters">
     <div class="wrapper">
       <h2>Filtres</h2>
       <ul>
@@ -60,15 +60,15 @@
 
   <div class="info">
     <div class="wrapper">
-      <div class="cercleInfo"><i class="fa-solid fa-info infoBulle"></i></div>
-      <p class="textInfoBulle">Plus de 500 logements sont disponibles dans cette ville</p>
+      <div class="infoCircle"><i class="fa-solid fa-info"></i></div>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
   </div>
   <!-- section hébergements à Marseille-->
 
-  <section id="HébergementsAMarseille" class="sectionHeb">
+  <section id="Hébergements" class="sectionHeb">
     <div class="wrapper">
-      <div class="cardHebergements">
+      <div class="block1">
         <!--Hébergements-->
         <h2>Hébergements à Marseille</h2>
 
@@ -178,17 +178,17 @@
       </div>
       <!--fin hebergement-->
       <!--Les plus populaires-->
-      <aside class="cardPopulaires">
-        <div class="titrePlusEtoile">
+      <aside class="block2">
+        <div class="title">
           <h2>Les plus populaires</h2>
           <i class="fa-solid fa-star"></i>
         </div>
         <!--card populaires 1-->
-        <div class="containerCardPopu">
-          <a href="#" class=" cardPopu">
+        <div class="containerPopularCard">
+          <a href="#" class=" PopularCard">
             <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
               alt="Hotel Le soleil du matin">
-            <div class="cardDescriptionPopulaires">
+            <div class="popularCardDescription">
               <h3>Hôtel Le soleil du matin</h3>
               <p>Nuit à partir de <strong>128€</strong></p>
               <div class="stars stars-5">
@@ -203,10 +203,10 @@
 
           <!--card populaires 2-->
 
-          <a href="#" class="cardPopu">
+          <a href="#" class="PopularCard">
             <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="Au coeur de l'eau Chambres d'hôtes">
-            <div class="cardDescriptionPopulaires">
+            <div class="popularCardDescription">
               <h3>Au coeur de l'eau Chambres d'hôtes</h3>
               <p>Nuit à partir de <strong>71€</strong></p>
               <div class="stars stars-4">
@@ -220,10 +220,10 @@
           </a>
           <!--card populaires 3-->
 
-          <a href="#" class=" cardPopu">
+          <a href="#" class="PopularCard">
             <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Hotel Tout bleu et Blanc">
-            <div class="cardDescriptionPopulaires">
+            <div class="popularCardDescription">
               <h3>Hôtel Tout bleu et Blanc</h3>
               <p>Nuit à partir de <strong>68€</strong></p>
               <div class="stars stars-4">
@@ -240,44 +240,44 @@
     </div>
   </section>
   <!--section activités à Marseille-->
-  <section id="ActivitésAMarseille" class="activites">
+  <section id="Activités" class="activities">
     <div class="wrapper">
 
       <h2>Activités à Marseille</h2>
       <!--cardVieuxPort-->
-      <div class="containerCardActivites">
-        <a href="#" class="card cardActivitesGrande">
+      <div class="containerActivitiesCard">
+        <a href="#" class="card cardLarge">
           <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
           <h3>Vieux Port</h3>
         </a>
 
         <!--card Fort de Pomègues-->
-        <div class="cardActivitesPetite">
-          <a href="#" class="card cardActivitesPetite1 espaceBetween1">
+        <div class="cardSmall">
+          <a href="#" class="card cardSmall1 espaceBetween1">
             <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
             <h3>Fort de Pomègues</h3>
           </a>
           <!--card Iles du Frioul-->
-          <a href="#" class="card cardActivitesPetite2">
+          <a href="#" class="card cardSmall2">
             <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul">
             <h3>Îles du Frioul</h3>
           </a>
         </div>
         <!--card Parc National des Calanques-->
-        <a href="#" class="card cardActivitesGrande espaceBetween2 ">
+        <a href="#" class="card cardLarge espaceBetween2 ">
           <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
             alt="Parc National des Calanques">
           <h3>Parc National des Calanques</h3>
         </a>
         <!--card Notre Dame de la Garde-->
-        <div class="cardActivitesPetite">
-          <a href="#" class="card cardActivitesPetite2 espaceBetween1">
+        <div class="cardSmall">
+          <a href="#" class="card cardSmall2 espaceBetween1">
             <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
             <h3>Notre-Dame-de-la-Garde</h3>
           </a>
 
           <!--card Parc Longchamp-->
-          <a href="#" class="card cardActivitesPetite1">
+          <a href="#" class="card cardSmall1">
             <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">
             <h3>Parc Longchamp</h3>
           </a>
@@ -288,19 +288,19 @@
   <!--footer-->
   <footer>
     <div class="wrapper">
-      <ul class="aPropos">
-        <li class="textGras">A propos</li>
+      <ul>
+        <li class="boldTitle">A propos</li>
         <li><a href="#">Fonctionnement du site</a></li>
         <li><a href="#">Conditions générales de vente</a></li>
         <li><a href="#">Données et confidentialité</a></li>
       </ul>
-      <ul class="nosHebergements">
-        <li class="textGras">Nos hébergements</li>
+      <ul>
+        <li class="boldTitle">Nos hébergements</li>
         <li><a href="#">Charte qualité</a></li>
         <li><a href="#">Soumettre votre hôtel</a></li>
       </ul>
-      <ul class="assistance">
-        <li class="textGras">Assistance</li>
+      <ul>
+        <li class="boldTitle">Assistance</li>
         <li><a href="#">Centre d'aide</a></li>
         <li><a href="#">Nous contacter</a></li>
       </ul>
