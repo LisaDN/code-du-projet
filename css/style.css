@@ -208,7 +208,7 @@ input:focus {
 }
 
 /*Section Hébergements*/
-.sectionHeb .wrapper {
+.sectionFlexAside .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
@@ -232,7 +232,7 @@ input:focus {
     box-shadow: 5px 5px 10px lightgray;
 }
 
-.cardHeb {
+.cardBody {
     display: flex;
     flex-direction: column;
     height: 230px;
@@ -243,19 +243,19 @@ input:focus {
     box-sizing: border-box;
 }
 
-.cardHeb img {
+.cardBody img {
     height: 55%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
-.cardHebDescription h3,
+.cardDescription h3,
 p,
 .stars {
     margin: 5px;
 }
 
-.cardHebDescription {
+.cardDescription {
     margin-left: 5px;
     margin-top: 10px;
 }
@@ -288,7 +288,7 @@ p,
     margin-top: 40px;
 }
 
-.alignContainerCard {
+.alignmentCardContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -305,7 +305,7 @@ p,
     margin-right: 20px;
 }
 
-aside h2 {
+.block2 h2 {
     margin-bottom: 30px;
     font-size: 20px;
 }
@@ -316,7 +316,7 @@ aside h2 {
     margin-left: 5px;
 }
 
-aside {
+.block2 {
     /*encadré gris*/
     background-color: #F2F2F2;
     height: 100%;
@@ -327,7 +327,7 @@ aside {
 
 }
 
-.PopularCard {
+.cardBodyPopular {
     display: flex;
     height: 100%;
     background-color: white;
@@ -348,7 +348,7 @@ aside {
     color: black;
 }
 
-.PopularCard img {
+.cardBodyPopular img {
     margin: 5px;
     width: 30%;
     /*image occupe 30% de l'encadrer blanc*/
@@ -369,7 +369,7 @@ aside {
 
 
 /*placement article et aside côte à côte*/
-.sectionHeb {
+.sectionFlexAside {
     display: flex;
 }
 
@@ -504,7 +504,7 @@ footer li {
         width: 90%;
     }
 
-    .sectionHeb .wrapper {
+    .sectionFlexAside .wrapper {
         width: 90%;
 
     }
@@ -540,7 +540,7 @@ footer li {
         height: 50%;
     }
 
-    .sectionHeb .wrapper {
+    .sectionFlexAside .wrapper {
         flex-direction: column;
     }
 
@@ -551,7 +551,7 @@ footer li {
         margin-left: 0;
     }
 
-    .cardHeb {
+    .cardBody {
         margin-top: 20px;
         margin-bottom: 20px;
     }
@@ -708,17 +708,17 @@ footer li {
 
     }
 
-    .alignContainerCard {
+    .alignmentCardContainer {
         flex-direction: column;
 
     }
 
-    .cardHeb {
+    .cardBody {
         width: 100%;
 
     }
 
-    .sectionHeb .wrapper {
+    .sectionFlexAside .wrapper {
         flex-direction: column;
 
     }
