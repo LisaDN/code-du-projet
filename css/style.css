@@ -337,7 +337,7 @@ p,
     height: 100%;
     background-color: white;
     padding: 0px;
-    border-radius: 15px;
+    border-radius: 20px;
     margin-bottom: 25px;
 }
 
@@ -368,7 +368,7 @@ p,
 }
 
 .popularCardDescription .stars {
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 
@@ -735,7 +735,10 @@ footer li {
     }
 
 
-
+    .cardBody,
+    .cardBodyPopular {
+        font-size: 13px;
+    }
 
     .activities .wrapper {
         width: 90%;
