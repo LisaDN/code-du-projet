@@ -226,6 +226,7 @@ input:focus {
     padding: 20px;
     padding-left: 40px;
     /*réduction décalage vers la droite*/
+    padding-bottom: 700px;
 }
 
 .card {
@@ -287,16 +288,22 @@ p,
 .block1 h2 {
     font-size: 20px;
     margin-bottom: 30px;
+    margin-top: 40px;
+
 }
 
-.block1 h4 {
-    margin-top: 40px;
+.block1 .showMore {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 .alignmentCardContainer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    margin-bottom: 50px;
+    /*margin-bottom : espace card et texte "afficher plus"*/
 }
 
 
@@ -308,6 +315,7 @@ p,
     align-items: baseline;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 40px;
 }
 
 .block2 h2 {
@@ -368,7 +376,7 @@ p,
 }
 
 .popularCardDescription .stars {
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 
@@ -482,12 +490,17 @@ footer li {
     margin: 10px;
 }
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:992px) and (max-width:1600px) {
     .wrapper {
         width: 90%;
         /*pour que le contenu ne colle pas à la bordure*/
         font-size: 80%;
         /*réduction taille police*/
+    }
+
+    footer .wrapper {
+
+        width: 90%;
     }
 
 
@@ -543,6 +556,8 @@ footer li {
     .block1 {
         order: 2;
         height: 50%;
+        padding-bottom: 0;
+        /*enlève le padding mis en version desktop */
     }
 
     .sectionFlexAside .wrapper {
@@ -720,18 +735,12 @@ footer li {
 
     .cardBody {
         width: 100%;
-
     }
 
     .sectionFlexAside .wrapper {
         flex-direction: column;
-
-    }
-
-
-
-    .block1 h4 {
-        margin-top: 20px;
+        margin-bottom: 10%;
+        /*espacement section heb de activités*/
     }
 
 
@@ -743,6 +752,7 @@ footer li {
     .activities .wrapper {
         width: 90%;
         margin: 0 auto;
+
     }
 
     .containerActivitiesCard {
