@@ -213,7 +213,7 @@ input:focus {
 }
 
 /*Section Hébergements*/
-.sectionFlexAside .wrapper {
+.containerCards .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
@@ -292,7 +292,7 @@ p,
 
 }
 
-.block1 .showMore {
+.showMore a {
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -382,7 +382,7 @@ p,
 
 
 /*placement article et aside côte à côte*/
-.sectionFlexAside {
+.containerCards {
     display: flex;
 }
 
@@ -522,7 +522,7 @@ footer li {
         width: 90%;
     }
 
-    .sectionFlexAside .wrapper {
+    .containerCards .wrapper {
         width: 90%;
 
     }
@@ -560,7 +560,7 @@ footer li {
         /*enlève le padding mis en version desktop */
     }
 
-    .sectionFlexAside .wrapper {
+    .containerCards .wrapper {
         flex-direction: column;
     }
 
@@ -737,7 +737,7 @@ footer li {
         width: 100%;
     }
 
-    .sectionFlexAside .wrapper {
+    .containerCards .wrapper {
         flex-direction: column;
         margin-bottom: 10%;
         /*espacement section heb de activités*/
@@ -757,7 +757,6 @@ footer li {
 
     .containerActivitiesCard {
         flex-direction: column;
-
     }
 
     .cardLarge img {
@@ -779,8 +778,8 @@ footer li {
         margin-bottom: 20px;
     }
 
-    .activities .wrapper {
-        margin-top: 150px;
+    .activities h2 {
+        margin-top: 160px;
     }
 
     .espaceBetween1 {
@@ -801,6 +800,5 @@ footer li {
     footer ul {
         width: 100%;
     }
-
 
 }
