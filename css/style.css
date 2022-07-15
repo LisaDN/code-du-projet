@@ -474,6 +474,7 @@ footer .wrapper {
 
 footer ul {
     width: calc(100%/3);
+    margin: 15px;
 }
 
 footer a {
@@ -487,8 +488,10 @@ footer a {
 }
 
 footer li {
-    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
+
 
 @media screen and (min-width:992px) and (max-width:1600px) {
     .wrapper {
